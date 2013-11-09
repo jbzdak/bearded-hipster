@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import mmap
-from operator import itemgetter, methodcaller
+from operator import itemgetter, methodcaller, attrgetter
 import os
 import struct
 import glob
@@ -21,16 +21,17 @@ class KamikaLoader(object):
         for dir in dirs_to_load:
             self._load_directory(dir, dates, data)
 
-        self.data = np.asanyarray(data)
+        self.data = np.asanyarray(map(attrgetter('data'), data))
         self.dates = np.asanyarray(dates)
+        self.files = data
 
     @classmethod
     def _load_directory(cls, dirname, date_list, data_list):
 
 
-        for file in glob.glob(dirname + "/*MD1"):
+        for file in sorted(glob.glob(dirname + "/*MD1")):
             opened = cls._load_file_data(os.path.join(dirname, file))
-            data_list.append(opened.data)
+            data_list.append(opened)
             date_list.append(cls._measurement_date(opened))
 
     @classmethod
@@ -75,6 +76,8 @@ class KamikaLoader(object):
         ('start' , (0x13d1, '<8s', __decode_utf8)),
         ('stop' , (0x1415, '<8s', __decode_utf8)),
         ('wind_speed', (0x5d6, '<L', lambda x: x[0]/4.0)),
+        ('humidity', (0x204, '<L', lambda x:x[0]/3501.0*100)),
+        ('wind_direction', (0x91, '<L', itemgetter(0)))
     ))
 
     KamikaFile = namedtuple('KamikaFile', FORMAT.keys())
