@@ -4,7 +4,12 @@
     <bookmark url="file://$PROJECT_DIR$/data/2dc1474.MD1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84611a98-232a-4346-b752-a3d01a31b1ac" name="Default" comment="" />
+    <list default="true" id="84611a98-232a-4346-b752-a3d01a31b1ac" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kamika/load.py" afterPath="$PROJECT_DIR$/kamika/load.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="kamika.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +21,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/kamika$Doctests_in_load.coverage" NAME="Doctests in load Coverage Results" MODIFIED="1384006275964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kamika" />
-    <SUITE FILE_PATH="coverage/kamika$Nosetests_in_test_load.coverage" NAME="Nosetests in test_load Coverage Results" MODIFIED="1384010201954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kamika_test" />
+    <SUITE FILE_PATH="coverage/kamika$Nosetests_in_test_load.coverage" NAME="Nosetests in test_load Coverage Results" MODIFIED="1384030370347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kamika_test" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -33,11 +38,40 @@
       <file leaf-file-name="load.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kamika/load.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="37" selection-start="640" selection-end="640" vertical-scroll-proportion="0.31304348" vertical-offset="342" max-vertical-offset="1692">
+            <state line="75" column="14" selection-start="2242" selection-end="2242" vertical-scroll-proportion="2.1895652" vertical-offset="91" max-vertical-offset="1746">
               <folding>
                 <element signature="e#25#36#0" expanded="true" />
-                <element signature="e#1406#1612#1" expanded="true" />
+                <element signature="e#1415#1621#1" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="operator.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharm30/system/python_stubs/-1247971766/operator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="494" column="19" selection-start="15007" selection-end="15007" vertical-scroll-proportion="0.0" vertical-offset="7927" max-vertical-offset="8820">
+              <folding>
+                <element signature="e#13547#13856#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/lib/python3.3/collections/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="163" column="41" selection-start="6173" selection-end="6173" vertical-scroll-proportion="0.0" vertical-offset="2509" max-vertical-offset="16704">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="abc.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/lib/python3.3/collections/abc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="577" column="0" selection-start="15403" selection-end="15403" vertical-scroll-proportion="0.0" vertical-offset="9367" max-vertical-offset="12150">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,6 +131,14 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -112,7 +154,7 @@
     <option name="width" value="1920" />
     <option name="height" value="1053" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -207,7 +249,8 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../pycuda-udacity" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
@@ -237,8 +280,8 @@
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
+      <option name="PARAMS" value="-s --nologcapture" />
+      <option name="USE_PARAM" value="true" />
       <RunnerSettings RunnerId="Basic" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -431,6 +474,23 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="84611a98-232a-4346-b752-a3d01a31b1ac" name="Default" comment="" />
@@ -441,9 +501,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -452,7 +512,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955604" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32963374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -473,7 +533,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/kamika/load.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -482,7 +549,7 @@
         <state line="17" column="31" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1458">
           <folding>
             <element signature="e#25#36#0" expanded="true" />
-            <element signature="e#1406#1612#1" expanded="true" />
+            <element signature="e#1415#1621#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -506,7 +573,7 @@
         <state line="17" column="31" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1458">
           <folding>
             <element signature="e#25#36#0" expanded="true" />
-            <element signature="e#1406#1612#1" expanded="true" />
+            <element signature="e#1415#1621#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -549,13 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0001.asc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4716">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kamika_test/test_load.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="69" column="0" selection-start="2881" selection-end="2881" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1296">
@@ -563,12 +623,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/lib/python3.3/collections/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="41" selection-start="6173" selection-end="6173" vertical-scroll-proportion="0.0" vertical-offset="2509" max-vertical-offset="16704">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0001.asc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4716">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm30/system/python_stubs/-1247971766/operator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="494" column="19" selection-start="15007" selection-end="15007" vertical-scroll-proportion="0.0" vertical-offset="7927" max-vertical-offset="8820">
+          <folding>
+            <element signature="e#13547#13856#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.3/collections/abc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="577" column="0" selection-start="15403" selection-end="15403" vertical-scroll-proportion="0.0" vertical-offset="9367" max-vertical-offset="12150">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kamika/load.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="37" selection-start="640" selection-end="640" vertical-scroll-proportion="0.31304348" vertical-offset="342" max-vertical-offset="1692">
+        <state line="75" column="14" selection-start="2242" selection-end="2242" vertical-scroll-proportion="2.1895652" vertical-offset="91" max-vertical-offset="1746">
           <folding>
             <element signature="e#25#36#0" expanded="true" />
-            <element signature="e#1406#1612#1" expanded="true" />
+            <element signature="e#1415#1621#1" expanded="true" />
           </folding>
         </state>
       </provider>

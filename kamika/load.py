@@ -1,19 +1,20 @@
 # -*- coding: utf-8 -*-
 
 import mmap
+from operator import itemgetter, methodcaller
 import os
 import struct
 import glob
 import numpy as np
-from collections import namedtuple
+from collections import namedtuple, OrderedDict
 from datetime import datetime, time, date
 
-KamikaFile = namedtuple('KamikaFile', ['data', 'date', 'start', 'stop'])
 
+noop = lambda x: x
 
 class KamikaLoader(object):
 
-    def __init__(self, dirs_to_load = []):
+    def __init__(self, dirs_to_load = tuple()):
         dates = []
         data = []
 
@@ -40,10 +41,13 @@ class KamikaLoader(object):
 
         with open(filename, 'r+b') as f:
             data = mmap.mmap(f.fileno(), 0)
+            result = {}
+            for name, (offset, format, operation) in cls.FORMAT.items():
 
-            result = struct.unpack_from(cls.FORMAT, data[:])
-            print("Loaded: "  +filename)
-            return KamikaFile(data=result[:-4], date=result[-3].decode('utf-8'), start=result[-2].decode('utf-8'), stop=result[-1].decode('utf-8'))
+                result[name] = operation(struct.unpack_from(format, data, offset))
+
+            file = cls.KamikaFile(**result)
+            return file
 
     @classmethod
     def _measurement_date(cls, file):
@@ -60,22 +64,21 @@ class KamikaLoader(object):
 
         return datetime.combine(date, (start + meas_len).time())
 
+    __decode_utf8 = lambda x: x[0].decode('utf-8')
 
-    FORMAT = {
-        'suckction_speed': (0x5d6, '<L'),
-        'wind_speed': ('0x5d6', '<L', lambda x: x/4.0),
-        'data' : (0x80a, '<256L'),
+    FORMAT = OrderedDict()
+    
+    FORMAT.update((
+        ('suckction_speed', (0x5d6, '<L', itemgetter(0))),
+        ('data' , (0x80a, '<255L', noop)),
+        ('date' , (0x1305, '<10s', __decode_utf8)),
+        ('start' , (0x13d1, '<8s', __decode_utf8)),
+        ('stop' , (0x1415, '<8s', __decode_utf8)),
+        ('wind_speed', (0x5d6, '<L', lambda x: x[0]/4.0)),
+    ))
 
-    }
+    KamikaFile = namedtuple('KamikaFile', FORMAT.keys())
 
-
-    FORMAT = '< 2058x 256L 1787x 10s 194x 8s 60x 8s'
-    """
-    256 channels
-    Measurement date
-    Measurement start
-    Mesaurement end
-    """
 
     TIME_FORMAT = '%H:%M:%S'
 
